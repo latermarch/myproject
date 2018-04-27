@@ -1,0 +1,5 @@
+#  为什么不使用connector/C++ 而使用connector/C 因为前者要装boost库，有些麻烦！！！
+# （mingw结合mysql connector/c 来操作数据库）
+gcc -Iinclude -Llib mysqltest.cpp -llibmysql -o mysqltest（C）
+g++ -Iinclude -Llib *.h *.cpp -llibmysql -o mysqltest （用到c++ STL模板就用这条g++开头）
+
